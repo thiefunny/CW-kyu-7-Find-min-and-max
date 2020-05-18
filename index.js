@@ -1,12 +1,6 @@
 function getMinMax(arr){
   
-function compare (a, b) {
-  return a - b;
-}
-
-let result = [];
-arr.sort(compare);
-result.push(arr[0], arr[arr.length - 1]);
+result = [Math.min(...arr), Math.max(...arr)];
 return result;
 
 };
